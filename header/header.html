@@ -1,0 +1,128 @@
+<!-- 🔷 Navbar -->
+<style>
+    body {
+        font-family: 'Cairo', sans-serif;
+    }
+
+    .navbar {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        color: #007b8f;
+        font-size: 1.3rem;
+    }
+
+    .navbar-brand:hover {
+        color: #005f73;
+    }
+
+    .nav-link {
+        color: #007b8f !important;
+        font-weight: 600;
+        padding: 8px 12px;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: #005f73 !important;
+        border-bottom: 2px solid #007b8f;
+    }
+
+    .navbar-toggler {
+        border-color: #007b8f;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #007b8f;
+    }
+
+    .hero {
+        background-color: #e6f0ff;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+        color: #007b8f;
+        line-height: 2;
+    }
+
+    .services .icon {
+        font-size: 36px;
+        /* بدل 40px */
+        color: #007b8f;
+        margin-bottom: 10px;
+    }
+
+    .dropdown-menu {
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #ffffff;
+        border: 1px solid #dee2e6;
+    }
+
+    .dropdown-item {
+        font-weight: bold;
+        color: #007b8f;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        font-size: 0.95rem;
+    }
+
+    .dropdown-item:hover {
+        background-color: #eaf5f7;
+        color: #005f73;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: #005f73 !important;
+        /* border-bottom: 2px solid #007b8f; */
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-top">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <a class="navbar-brand d-flex align-items-center gap-2" href="../../index.html">
+            <img src="../assets/Rh.png" alt="لوجو" style="width: 50px; height: 50px; border-radius: 50%;">
+            <span style="font-weight: bold; font-size: 1.2rem; color: #007b8f;">رضا أحمد الحجري</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+            <ul class="navbar-nav d-flex align-items-center gap-3 mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="../../index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="../About/about.html">من نحن</a></li>
+                <li class="nav-item dropdown d-flex align-items-center">
+                    <a class="nav-link pe-1" href="../services/Services.html">خدماتنا</a>
+                    <a class="nav-link dropdown-toggle ps-1" href="#" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"></a>
+                    <ul class="dropdown-menu text-start" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="/services/tax-consulting.html">الاستشارات الضريبية
+                                والقانونية</a></li>
+                        <li><a class="dropdown-item" href="../services/tax-returns.html">الإقرارات الضريبية</a></li>
+                        <li><a class="dropdown-item" href="../services/financial-reports.html">إعداد الميزانيات
+                                والتقارير</a></li>
+                        <li><a class="dropdown-item" href="../services/accounting-setup.html">التأسيس المحاسبي
+                                للشركات</a></li>
+                        <li><a class="dropdown-item" href="../services/accounting-cycle.html">إعداد الدورة المستندية</a>
+                        </li>
+                        <li><a class="dropdown-item" href="../services/customs.html">التخليصات الجمركية</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="../Tax_Returns/abouttax-returns.html">الإقرارات
+                        الضريبية</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Contact/contact.html">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

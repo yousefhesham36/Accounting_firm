@@ -1,0 +1,79 @@
+body {
+    background-color: #f1f5f9;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    color: #222;
+}
+
+h2 {
+    font-size: 32px;
+    color: #007b8f;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 123, 143, 0.2);
+}
+
+.card-title {
+    color: #007b8f;
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom: 2px solid #007b8f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+ul.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.custom-list li::before {
+    content: "✓";
+    color: #2e7d32;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+#cover {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://gfuniexperts.com/wp-content/uploads/2021/09/2serv.webp');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
+.cover-text {
+    position: relative;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    border-radius: 20px;
+    z-index: 1;
+}

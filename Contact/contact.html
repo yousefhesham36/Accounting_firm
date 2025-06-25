@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../assets/Rh.png">
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <div id="cover" class="mb-5">
+        <div class="cover-text">تواصل معنا </div>
+    </div>
+
+    <section class="container py-5 text-end">
+        <h2 class="text-center mb-4">اتصل بنا</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="contact-card">
+                    <h5 class="mb-2">
+                        <i class="fas fa-envelope text-primary me-2"></i> الدعم
+                    </h5>
+                    <p class="mb-0"><strong>البريد الإلكتروني: redaelhagery@gmail.com</strong></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-card">
+                    <h5 class="mb-2">
+                        <i class="fas fa-phone text-success me-2"></i> الهاتف
+                    </h5>
+                    <p class="mb-0"><strong>رقم الهاتف: 01011880940</strong></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-card">
+                    <h5 class="mb-2">
+                        <i class="fas fa-map-marker-alt text-danger me-2"></i> العنوان
+                    </h5>
+                    <p class="mb-1"><strong>إيتاي البارود - شارع الجمهورية - بجوار مركز الشرطة - برج أبو الخير - الدور
+                            العاشر</strong></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- contact-->
+    <div class="container py-5">
+        <h2 class="text-center mb-5">تواصل معنا</h2>
+        <div class="row g-4 align-items-stretch">
+
+
+            <div class="col-md-6">
+                <form id="servicesForm" class="h-100 border p-4 rounded shadow-sm bg-light">
+
+                    <!-- name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">الاسم الكامل</label>
+                        <input type="text" class="form-control" id="name" placeholder="ادخل اسمك" required>
+                        <div class="text-danger small mt-1" id="name-error"></div>
+                    </div>
+
+                    <!-- num -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">رقم الهاتف</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="رقم هاتفك" required>
+                        <div class="text-danger small mt-1" id="phone-error"></div>
+                    </div>
+
+                    <!-- email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+                        <div class="text-danger small mt-1" id="email-error"></div>
+                    </div>
+
+                    <!-- msg -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">رسالتك</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="اكتب رسالتك هنا..."
+                            required></textarea>
+                        <div class="text-danger small mt-1" id="message-error"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">إرسال</button>
+                </form>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="h-100 border p-2 rounded shadow-sm">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116994.97029935129!2d30.58008646215507!3d30.879861578532715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f63900a2763e29%3A0x1f6657c8cbe78b1a!2sEtay%20El%20Baroud%20Police%20Station!5e1!3m2!1sen!2seg!4v1750435163324!5m2!1sen!2seg"
+                        width="100%" height="100%" style="border:0; min-height: 450px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ✅ الفوتر -->
+    <div id="footer"></div>
+
+    <!-- ✅ سكربتات -->
+    <script src="../layout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- emailjs -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"> </script>
+
+
+</body>
+
+</html>
